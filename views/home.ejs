@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Instagram</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="../Stylesheets/home.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,11 +18,11 @@
   
   <nav class="nav">
     <div class="nav_bar">
-      <a href="./home.html" class="logo">
-        <img src="../icons/logo_min.png" alt="Instsgram Logo" />
+      <a href="./home.ejs" class="logo">
+        <img src="../Images/logo_min.png" alt="Instsgram Logo" />
       </a>
 
-      <form action="./home.html" method="post" class="search_bar">
+      <form action="./home.ejs" method="post" class="search_bar">
         <input type="text" name="search" id="search" placeholder="Search" />
       </form>
 
@@ -63,7 +63,7 @@
               <img class="actionIcon switchAction" src="../svg/switch.svg" alt="profile" />
               <p class="action_title">Switch Accounts</p>
             </a>
-            <a href="../index.html" class="action">
+            <a href="/" class="action">
               <p class="action_title">Log Out</p>
             </a>
           </div>
@@ -239,7 +239,7 @@
           <i class="ri-heart-3-fill"></i>
         </div>
 
-        <div class="post_description">profile
+        <div class="post_description">
           <!-- POST INTERACTIONS -->
           <div class="post_interactions">
             <div class="interactions">
@@ -433,7 +433,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="home.js"></script>
+<script src="../Javascript/home.js"></script>
 </body>
 
 </html>

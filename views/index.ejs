@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <title>Login • Instagram</title>
 
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="../Stylesheets/styles.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,13 +23,13 @@
 <body>
   <div class="container">
     <div class="left">
-      <img src="./images/login_img.png" alt="loginImg" />
+      <img src="../images/login_img.png" alt="loginImg" />
     </div>
     <div class="right">
       <div class="loginForm">
-        <img src="./icons/logo_large.png" alt="logo" class="logo" />
+        <img src="../Images/logo_large.png" alt="logo" class="logo" />
         <a class="instruction" onclick="speakup()">First signup yourself then login</a>
-        <form action="#">
+        <form action="/login" method="post">
           <input type="username" name="username" id="username" placeholder="Enter your username" required />
           <input type="password" name="password" id="password" placeholder="Password" required />
           <input type="submit" value="Log In" onclick="loginUser()" />
@@ -42,11 +42,11 @@
         <a href="#" class="LoginWithFacebook">
           <i class="fa-brands fa-facebook-square facebook"></i>
           Log in with Facebook</a>
-        <a href="forgot_pass.html" class="forgot">Forgot password?</a>
+        <a href="./forgot_pass" class="forgot">Forgot password?</a>
       </div>
       <div class="dontHaveAccount">
         <p>Don't have an account?</p>
-        <a href="Signup.html" class="signup">Sign up</a>
+        <a href="/Signup" class="signup">Sign up</a>
       </div>
 
       <p id="getTheApp">Get the app.</p>
@@ -57,7 +57,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="../Javascript/script.js"></script>
   <script>
 
     window.onload = function () {

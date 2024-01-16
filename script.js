@@ -1,39 +1,42 @@
-function addData() {
-  const email = document.getElementById('email').value;
-  const name = document.getElementById('name').value;
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+const mongoose = require("mongoose");
 
-  // Save user data to local storage
-  const userData = {
-    email,
-    name,
-    username,
-    password
-  };
-  localStorage.setItem('userData', JSON.stringify(userData));
+// Connect to MongoDB
+mongoose.connect('mongodb+srv://awesmaniyar786:insta-clone123@cluster0.acx5jyc.mongodb.net/?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
-  alert("Successfully signed up!");
-  window.location.href = "./index.html";
-}
+const db = mongoose.connection;
 
-function loginUser() {
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+db.on('error', (error) => {
+  console.error('MongoDB connection error:', error);
+});
 
-  // Retrieve user data from local storage
-  const storedUserData = localStorage.getItem('userData');
-  if (storedUserData) {
-    const userData = JSON.parse(storedUserData);
+db.once('open', () => {
+  console.log('Connected to MongoDB');
+});
 
-    // Check if the provided email and password match
-    if (userData.username === username && userData.password === password) {
-      window.location.href = "HomePage/home.html";
-      alert('Login successful!');
-    } else {
-      alert('Login failed: Invalid username or password');
-    }
-  } else {
-    alert('User not found. Please sign up.');
+// Define User Schema
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true
+  },
+  name: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  },
+  email: {
+    type: String,
+    required: true
   }
-}
+});
+
+// Create User Model
+const User = mongoose.model("Users", userSchema);
+
+module.exports = User;
