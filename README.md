@@ -18,8 +18,12 @@ Welcome to my Instagram clone web app project! This project replicates the core 
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/your-username/instagram-clone.git`
+1. Clone the repository: `https://github.com/iamawez/instagram-clone.git`
 2. Open `index.html` in your preferred browser.
 
 
 Inspiration: Instagram
+
+
+## Website Link
+https://iamawez.github.io/instagram-clone/
