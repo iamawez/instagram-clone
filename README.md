@@ -28,7 +28,7 @@ Follow these steps to set up and run the project locally:
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/instagram-clone.git
+   git clone https://github.com/iamawez/instagram-clone.git
    
 
 2. **Navigate to the Project Directory:**
