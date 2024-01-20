@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://awesmaniyar786:insta-clone123@cluster0.acx5jyc.mongodb.net/?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
@@ -20,7 +20,8 @@ db.once('open', () => {
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true
+    required: true,
+    unique:true,
   },
   name: {
     type: String,
