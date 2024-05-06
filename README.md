@@ -52,3 +52,15 @@ Follow these steps to set up and run the project locally:
 
 Inspiration: Instagram
 
+
+## Demo
+
+![instagram-clone3](https://github.com/iamawez/instagram-clone/assets/108227269/1683854b-219d-45fd-8149-a84dcbcedf2d)
+
+![instagram-clone2](https://github.com/iamawez/instagram-clone/assets/108227269/53cb80c6-7a48-4f6f-bf80-7d061835c05e)
+
+![instagram-clone](https://github.com/iamawez/instagram-clone/assets/108227269/7b485ac0-6ccd-4725-98ce-07dd023fcd92)
+
+
+
+
