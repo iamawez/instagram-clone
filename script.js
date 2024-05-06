@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://awesmaniyar786:insta-clone123@cluster0.acx5jyc.mongodb.net/?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
+mongoose.connect('mongodb+srv://awesmaniyar786:VkPGfrrRwNYuCmUC@cluster0.fuuivzp.mongodb.net/mearseries?retryWrites=true&w=majority&appName=Cluster0', {
+useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
